@@ -20,7 +20,10 @@ To run the tests for LSTM model, use the following command:
 ```bash
 python3 7135-LSTMModel.py
 
+```
+
 To run the tests for LSTM model binary outcomes, use the following command:
 
 ```bash
 python3 7135-LSTMModelBinary.py
+```
