@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Machine Learning Model Training</title>
+</head>
+<body>
+    <h1>Upload CSV Files for Training</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        X Dataset: <input type="file" name="X_file"><br><br>
+        Y Dataset: <input type="file" name="Y_file"><br><br>
+        Y_batch Dataset: <input type="file" name="Y_batch_file"><br><br>
+        <input type="submit" value="Start Training">
+    </form>
+    <div id="result" style="margin-top: 20px;">
+        <!-- Results will be displayed here -->
+    </div>
+</body>
+</html>
+
+
