@@ -18,4 +18,4 @@ The research aims not only to highlight the potential of LSTM networks in captur
 To run the tests for our model, use the following command:
 
 ```bash
-python3 7135-final.py
+python3 7135-LSTMModel.py
