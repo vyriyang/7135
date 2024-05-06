@@ -16,9 +16,9 @@ import torch.optim as optim
 import torch.nn.functional as F
 from torch.utils.data import TensorDataset, DataLoader
 
-X = pd.read_csv('/Users/vyriYang/documents/research/7135/csv/7135_X.csv')
-Y = pd.read_csv('/Users/vyriYang/documents/research/7135/csv/7135_Y.csv')
-Y_batch = pd.read_csv('/Users/vyriYang/documents/research/7135/csv/7135_Y_batch.csv')
+X = pd.read_csv('csv/7135_X.csv')
+Y = pd.read_csv('csv/7135_Y.csv')
+Y_batch = pd.read_csv('csv/7135_Y_batch.csv')
 # 输出前几行以确认读取正确
 print(Y_batch.head())
 
@@ -102,7 +102,7 @@ num_epochs = 200
 
 # 实例化模型
 model = LSTMModel(input_size, hidden_size, num_layers, output_size)
-save_path = '/Users/vyriYang/documents/research/7135/pth/Binary_model_parameters.pth'
+save_path = 'pth/Binary_model_parameters.pth'
 criterion = nn.CrossEntropyLoss()  # 使用交叉熵损失
 optimizer = torch.optim.Adam(model.parameters(), lr=lr)
 
